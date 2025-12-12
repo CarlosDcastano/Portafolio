@@ -1,0 +1,39 @@
+header {
+    background-color: rgb(13, 13, 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.aside-main {
+    display: flex;
+}
+
+aside {
+    background-color: rgb(13, 13, 19);
+    color: white;
+    text-decoration: none;
+    text-overflow: none;
+    width: 30rem;
+    height: 100vh;
+    padding: 1rem; 
+
+}
+
+main {
+    background-color: rgb(13, 13, 19);
+    margin: 1px;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: rgb(13, 13, 19);
+    color: white;
+    padding: 1rem;
+}
