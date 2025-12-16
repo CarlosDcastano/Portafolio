@@ -1,5 +1,11 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 header {
-    background-color: rgb(13, 13, 19);
+    background-color: rgb(13, 13, 19);;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,29 +13,134 @@ header {
     text-align: center;
 }
 
+
+
 .aside-main {
     display: flex;
+    min-height: 100vh;
+
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(13, 13, 19);
     color: white;
-    text-decoration: none;
-    text-overflow: none;
-    width: 30rem;
-    height: 100vh;
     padding: 1rem; 
-
+    margin-top: 1px;
+    margin-bottom: 1px;
+    gap: 1rem;
 }
 
+aside h2 {
+    font-size:x-large;
+    text-align: center;
+}
+
+aside h2:active {
+    transform: scale(0.95);
+}
+
+.lista-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lista-proyectos li:hover{
+    transform:translateY(-4px);
+    box-shadow: 0px, 0px, 10px;
+    transition: 0.3s;
+}
+
+.links-repos {
+    color: rgb(243, 138, 138);
+    text-decoration: none;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    transition: transform 0.3s box-shadow 0.3s;
+}
+
+.links-repos:hover {
+    transform: scale(1.2);
+    box-shadow: 0px, 0px, 10px;
+}
+
+
 main {
-    background-color: rgb(13, 13, 19);
+/*     background-image: url("https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MDJpdTY2OXdzY2E4dmE4bGNicDFlaTJlajcyZzhpOWdrZXpqcXZndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lfl95OUjiOtn9pWcqk/giphy.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: antiquewhite;
     margin: 1px;
-    color: white;
+    color: black;
     padding: 1rem;
 }
 
 
+
+#todo-iframe{
+    display: flex;
+    flex-direction: column;
+}
+
+#todo-iframe>div{
+    transition: all 0.2s;
+}
+
+#todo-iframe>div:hover{
+    transform:translateY(-4px);
+    box-shadow: 0px 0px 10px black;
+}
+
+
+/*Solo IFRAME*/
+
+
+.iframe-box {
+    display: none;
+    margin-top: 20px;
+}
+
+/* 2️⃣ SOLO SE MUESTRA CUANDO SE HACE CLICK */
+#portafolio-iframe:checked + .iframe-box {
+    display: block;
+    border: 10px white solid;
+}
+
+#galeria-iframe:checked + .iframe-box {
+    display: block;
+    border: 10px white solid;
+}
+
+#ciudad-iframe:checked + .iframe-box {
+    display: block;
+    border: 10px white solid;
+}
+
+#MiniOS-iframe:checked + .iframe-box {
+    display: block;
+    border: 10px white solid;
+}
+
+/* 3️⃣ ESTILO */
+.abrir {
+    cursor: pointer;
+}
+
+.abrir h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.iframe-box iframe {
+    width: 100%;
+    height: 700px;
+    border: 3px black solid;
+}
 
 footer {
     text-align: center;
@@ -37,3 +148,38 @@ footer {
     color: white;
     padding: 1rem;
 }
+/*FIN IFRAME*/
+
+
+/*Responsive*/
+
+
+/*Esto es para celulares, normalmente*/
+
+@media (max-width: 479px) {
+
+    .aside-main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 480px) {
+    .aside-main {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px){
+    aside{
+        max-width: 20rem;
+        width: 100%;
+    }
+}
+

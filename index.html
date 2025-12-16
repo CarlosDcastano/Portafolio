@@ -19,12 +19,15 @@
     </header>
     <div class="aside-main">  
         <aside>
-            <h2>Mis proyectos</h2>
+            <h2>Lista de mis repositorios en Github</h2>
             <nav>
-                <ul>
-                    <li><a href="https://github.com/CarlosDcastano">Mi perfil</a></li>
-                    <li> <a href="https://github.com/CarlosDcastano/Riwi.git">Repo Review</a></li>
-                    <li><a href="https://github.com/CarlosDcastano/US1M2.git">Portafolio y mascotas </a> Despliegue <a href="https://carlosdcastano.github.io/US1M2/">Aquí</a></li>
+                <ul class="lista-proyectos">
+                    <li><a class="links-repos" href="https://github.com/CarlosDcastano">Mi perfil de Github</a></li>
+                    <li><a class="links-repos" href="https://github.com/CarlosDcastano/Riwi.git">Repo Review</a></li>
+                    <li><a class="links-repos" href="https://github.com/CarlosDcastano/Ciudad-del-Conocimiento.git">Repo Ciudad del conocimiento</a> 
+                    <li><a class="links-repos" href="https://github.com/CarlosDcastano/Galeria-de-paginas.git">Repo Galería de páginas </a>
+                    <li><a class="links-repos" href="https://github.com/CarlosDcastano/US1M2.git">Repo Portafolio y mascotas </a>
+                    <li><a class="links-repos" href="https://github.com/SantiagoBoteroDiaz/MiniOS.git">Repo MiniOS</a>
                 </ul>
             
             </nav>
@@ -41,6 +44,80 @@
                     seguidamente, aprendimos sobre HTML y CSS, momento en el cual escribo
                     este artículo.
                 </p>
+            </section>
+
+            <section id="todo-iframe">
+                <!-- label es la palabra que describe lo que se hará en un input
+                el for, sirve para decir a qué está unida esa descripción, y
+                debe ser el id del input-->
+                <div>
+                    <label for="portafolio-iframe" class="abrir">
+                        <h2>Click aquí para abrir mi proyecto portafolio</h2>
+                    </label>
+                            <!-- Aquí se ve que el id del input es el mismo que el for del label -->
+                    <input type="checkbox" id="portafolio-iframe" hidden> <!-- Cuando usamos hidden, se oculta el checkbox -->
+
+                    <div class="iframe-box">
+                        <iframe
+                            src="https://carlosdcastano.github.io/US1M2/"
+                            title="Video informativo"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="ciudad-iframe" class="abrir">
+                        <h2>Click aquí para abrir mi proyecto Ciudad del conocimiento</h2>
+                    </label>
+                                <!-- Aquí se ve que el id del input es el mismo que el for del label -->
+                    <input type="checkbox" id="ciudad-iframe" hidden> <!-- Cuando usamos hidden, se oculta el checkbox -->
+
+                    <div class="iframe-box">
+                        <iframe
+                            src="https://carlosdcastano.github.io/Ciudad-del-Conocimiento/index.html"
+                            title="Video informativo"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="galeria-iframe" class="abrir">
+                        <h2>Click aquí para abrir mi galería de páginas</h2>
+                    </label>
+                                <!-- Aquí se ve que el id del input es el mismo que el for del label -->
+                    <input type="checkbox" id="galeria-iframe" hidden> <!-- Cuando usamos hidden, se oculta el checkbox -->
+
+                    <div class="iframe-box">
+                        <iframe
+                            src="https://carlosdcastano.github.io/Galeria-de-paginas/"
+                            title="Video informativo"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="MiniOS-iframe" class="abrir">
+                        <h2>Click aquí para abrir mi proyecto MiniOS</h2>
+                    </label>
+                                <!-- Aquí se ve que el id del input es el mismo que el for del label -->
+                    <input type="checkbox" id="MiniOS-iframe" hidden> <!-- Cuando usamos hidden, se oculta el checkbox -->
+
+                    <div class="iframe-box">
+                        <iframe
+                            src="https://santiagoboterodiaz.github.io/MiniOS/"
+                            title="Video informativo"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
             </section>
 
         </main>
